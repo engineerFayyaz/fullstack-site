@@ -6,7 +6,7 @@ const MyChannels = React.lazy(() => import("pages/MyChannels"));
 const UploadContent = React.lazy(() => import("pages/UploadContent"));
 const DesktopThirtySix = React.lazy(() => import("pages/DesktopThirtySix"));
 const Desktop192 = React.lazy(() => import("pages/Desktop192"));
-const Desktop182 = React.lazy(() => import("pages/Desktop182"));
+const Profile = React.lazy(() => import("pages/Profile"));
 const Disclaimer = React.lazy(() => import("pages/Disclaimer"));
 const PrivacyPolicy = React.lazy(() => import("pages/PrivacyPolicy"));
 const TermsConditions = React.lazy(() => import("pages/TermsConditions"));
@@ -23,7 +23,7 @@ const SignUpEmail = React.lazy(() => import("pages/SignUpEmail"));
 const SignUp = React.lazy(() => import("pages/SignUp"));
 const SignUpOne = React.lazy(() => import("pages/SignUpOne"));
 const Login = React.lazy(() => import("pages/Login"));
-const Desktop177 = React.lazy(() => import("pages/Desktop177"));
+const MyWishlist = React.lazy(() => import("pages/MyWishlist"));
 const ProjectRoutes = () => {
   return (
     <React.Suspense fallback={<>Loading...</>}>
@@ -31,7 +31,7 @@ const ProjectRoutes = () => {
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="*" element={<NotFound />} />
-          <Route path="/desktop177" element={<Desktop177 />} />
+          <Route path="/MyWishlist" element={<MyWishlist />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signupone" element={<SignUpOne />} />
           <Route path="/signup" element={<SignUp />} />
@@ -48,7 +48,7 @@ const ProjectRoutes = () => {
           <Route path="/TermsConditions" element={<TermsConditions />} />
           <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
           <Route path="/Disclaimer" element={<Disclaimer />} />
-          <Route path="/desktop182" element={<Desktop182 />} />
+          <Route path="/Profile" element={<Profile />} />
           <Route path="/desktop192" element={<Desktop192 />} />
           <Route path="/desktopthirtysix" element={<DesktopThirtySix />} />
           <Route path="/UploadContent" element={<UploadContent />} />

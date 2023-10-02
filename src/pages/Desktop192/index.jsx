@@ -185,14 +185,14 @@ const Desktop192Page = () => {
             <Text
               className="common-pointer md:ml-[0] ml-[33px] mt-1 text-base text-white-A700"
               size="txtOpenSansRomanRegular16"
-              onClick={() => navigate("/desktop182")}
+              onClick={() => navigate("/Profile")}
             >
               Profile
             </Text>
             <Text
               className="common-pointer md:ml-[0] ml-[33px] mt-[26px] text-base text-white-A700"
               size="txtOpenSansRomanRegular16"
-              onClick={() => navigate("/desktop177")}
+              onClick={() => navigate("/MyWishlist")}
             >
               Wishlist
             </Text>

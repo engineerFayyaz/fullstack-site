@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 import { Button, Img, Line, List, Text } from "components";
 
-const Desktop182Page = () => {
+const Profile = () => {
   const navigate = useNavigate();
 
   return (
@@ -579,4 +579,4 @@ const Desktop182Page = () => {
   );
 };
 
-export default Desktop182Page;
+export default Profile;
