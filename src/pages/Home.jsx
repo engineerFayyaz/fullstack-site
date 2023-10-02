@@ -21,16 +21,16 @@ const Home = () => {
           <Link to="/signupemail">SignUpEmail</Link>
         </li>
         <li>
-          <Link to="/desktop186">HomePage</Link>
+          <Link to="/HomePage">HomePage</Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="/desktop187">Desktop187 Screen</Link>
+        </li> */}
+        <li>
+          <Link to="/Movies">Movies</Link>
         </li>
         <li>
-          <Link to="/desktop188">Desktop188</Link>
-        </li>
-        <li>
-          <Link to="/desktop189">Desktop189</Link>
+          <Link to="/Channels">Channels</Link>
         </li>
         <li>
           <Link to="/desktop190">Desktop190</Link>
@@ -48,13 +48,13 @@ const Home = () => {
           <Link to="/desktop191">Desktop191</Link>
         </li>
         <li>
-          <Link to="/desktop179">Desktop179</Link>
+          <Link to="/TermsConditions">TermsConditions</Link>
         </li>
         <li>
-          <Link to="/desktop180">Desktop180</Link>
+          <Link to="/PrivacyPolicy">PrivacyPolicy</Link>
         </li>
         <li>
-          <Link to="/desktop181">Desktop181</Link>
+          <Link to="/Disclaimer">Disclaimer</Link>
         </li>
         <li>
           <Link to="/desktop182">Desktop182</Link>
@@ -66,10 +66,10 @@ const Home = () => {
           <Link to="/desktopthirtysix">DesktopThirtySix</Link>
         </li>
         <li>
-          <Link to="/desktop193">Desktop193</Link>
+          <Link to="/UploadContent">UploadContent</Link>
         </li>
         <li>
-          <Link to="/desktopthirtyseven">DesktopThirtySeven</Link>
+          <Link to="/MyChannels">MyChannels</Link>
         </li>
       </ul>
     </div>

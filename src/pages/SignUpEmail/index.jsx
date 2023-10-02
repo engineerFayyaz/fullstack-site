@@ -183,7 +183,7 @@ const SignUpEmailPage = () => {
               </div>
               <Button
                 className="common-pointer border border-pink-500 border-solid cursor-pointer leading-[normal] min-w-[225px] mt-8 shadow-bs2 text-2xl md:text-[22px] text-center sm:text-xl"
-                onClick={() => navigate("/desktop186")}
+                onClick={() => navigate("/HomePage")}
                 shape="round"
                 color="pink_500"
                 size="xs"
@@ -197,7 +197,7 @@ const SignUpEmailPage = () => {
                   className="sm:mt-0 mt-0.5 text-lg text-white-A700_90"
                 >
                   <Text size="txtPoppinsRegular18WhiteA70090"
-                  onClick={() => navigate("/desktop180")}
+                  onClick={() => navigate("/PrivacyPolicy")}
                   >
                     Privacy Policy
                   </Text>
@@ -208,14 +208,14 @@ const SignUpEmailPage = () => {
                 >
                   <Text size="txtPoppinsRegular18WhiteA70090"
                 
-                  onClick={() => navigate("/desktop179")}>
+                  onClick={() => navigate("/TermsConditions")}>
                     Terms and Conditions
                   </Text>
                 </a>
                 <Text
                   className="mb-0.5 text-lg text-white-A700_90"
                   size="txtPoppinsRegular18WhiteA70090"
-                  onClick={() => navigate("/desktop181")}
+                  onClick={() => navigate("/Disclaimer")}
                 >
                   Disclaimer
                 </Text>

@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { Button, Img, Input, Text, TextArea } from "components";
 import Header1 from "components/Header1";
 
-const Desktop193Page = () => {
+const UploadContent = () => {
   const navigate = useNavigate();
 
   return (
@@ -115,8 +115,6 @@ const Desktop193Page = () => {
                   className="bg-transparent border border-solid border-white-A700 gap-[13px] h-[309px] leading-[normal] pb-[265px] pt-[13px] px-2.5 rounded-[5px] text-left text-sm placeholder:text-white-A700 text-white-A700 w-[420px]"
                   name="frameThree_Three"
                   placeholder="Description"
-                  name="frameThree_Three"
-                  placeholder="Description"
                 ></TextArea>
               </div>
               <div className="flex flex-col md:gap-10 gap-24 items-center justify-start w-[40%] md:w-full">
@@ -137,7 +135,7 @@ const Desktop193Page = () => {
                 </div>
                 <Button
                   className="common-pointer cursor-pointer font-bold font-catamaran rounded-br-[3px] rounded-tr-[3px] text-base text-center w-[220px]"
-                  onClick={() => navigate("/desktopthirtyseven")}
+                  onClick={() => navigate("/MyChannels")}
                   color="pink_500"
                   size="md"
                   variant="fill"
@@ -153,4 +151,4 @@ const Desktop193Page = () => {
   );
 };
 
-export default Desktop193Page;
+export default UploadContent;

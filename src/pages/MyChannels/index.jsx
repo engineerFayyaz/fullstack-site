@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { Button, Img, Text } from "components";
 import Header1 from "components/Header1";
 
-const DesktopThirtySevenPage = () => {
+const MyChannels = () => {
   const navigate = useNavigate();
 
   return (
@@ -39,7 +39,7 @@ const DesktopThirtySevenPage = () => {
               </Text>
               <Button
                 className="common-pointer cursor-pointer md:ml-[0] ml-[19px] mt-[33px] rounded-br-[3px] rounded-tr-[3px] text-base text-center w-[271px]"
-                onClick={() => navigate("/desktop193")}
+                onClick={() => navigate("/UploadContent")}
                 color="pink_500"
                 size="md"
                 variant="fill"
@@ -206,4 +206,4 @@ const DesktopThirtySevenPage = () => {
   );
 };
 
-export default DesktopThirtySevenPage;
+export default MyChannels;

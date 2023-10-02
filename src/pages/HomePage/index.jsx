@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 import { Button, Img, List, PagerIndicator, RatingBar, Text } from "components";
 
-const Desktop187Page = () => {
+const HomePage = () => {
   const navigate = useNavigate();
 
   return (
@@ -18,24 +18,22 @@ const Desktop187Page = () => {
           />
           <div className="flex md:flex-1 md:flex-col flex-row md:gap-10 items-center justify-between md:ml-[0] ml-[528px] md:mt-0 my-[19px] w-[56%] md:w-full">
             <div className="flex sm:flex-col flex-row sm:gap-10 items-start justify-between w-[63%] md:w-full">
-              <Button
-                className="common-pointer bg-transparent cursor-pointer flex items-center justify-center min-w-[78px]"
-                onClick={() => navigate("/desktop186")}
-                leftIcon={
-                  <Img
-                    className="h-[22px] mb-px mr-2"
-                    src="images/img_frame_pink_500.svg"
-                    alt="Frame"
-                  />
-                }
-              >
-                <div className="font-bold text-base text-left text-pink-500">
+              <div className="flex flex-row gap-2 items-center justify-center w-auto">
+                <Img
+                  className="h-[22px] w-[22px]"
+                  src="images/img_frame_pink_500.svg"
+                  alt="frame"
+                />
+                <Text
+                  className="text-base text-pink-500 w-auto"
+                  size="txtOpenSansRomanBold16"
+                >
                   Home
-                </div>
-              </Button>
+                </Text>
+              </div>
               <Button
                 className="common-pointer bg-transparent cursor-pointer flex items-center justify-center min-w-[83px]"
-                onClick={() => navigate("/desktop188")}
+                onClick={() => navigate("/Movies")}
                 leftIcon={
                   <Img
                     className="h-[22px] mb-px mr-2"
@@ -50,7 +48,7 @@ const Desktop187Page = () => {
               </Button>
               <Button
                 className="common-pointer bg-transparent cursor-pointer flex items-center justify-center min-w-[100px]"
-                onClick={() => navigate("/desktop189")}
+                onClick={() => navigate("/Channels")}
                 leftIcon={
                   <Img
                     className="h-[22px] mt-px mr-2"
@@ -72,7 +70,7 @@ const Desktop187Page = () => {
                 <Text
                   className="common-pointer text-base text-white-A700 w-auto"
                   size="txtOpenSansRomanRegular16"
-                  onClick={() => navigate("/desktopthirtyseven")}
+                  onClick={() => navigate("/MyChannels")}
                 >
                   My Channel
                 </Text>
@@ -84,7 +82,8 @@ const Desktop187Page = () => {
               alt="search_One"
             />
             <Button
-              className="cursor-pointer flex items-center justify-center min-w-[190px]"
+              className="common-pointer cursor-pointer flex items-center justify-center min-w-[190px]"
+              onClick={() => navigate("/desktop192")}
               leftIcon={
                 <Img
                   className="h-[22px] mb-px mr-2.5"
@@ -167,28 +166,51 @@ const Desktop187Page = () => {
           </div>
         </div>
         <div className="flex flex-col gap-8 items-start justify-start max-w-[1432px] mb-2 mt-8 mx-auto overflow-auto md:px-5 w-full">
-          <div className="h-[728px] relative w-full">
-            <div className="md:h-[1254px] h-[386px] sm:h-[442px] mb-[-6px] mx-auto w-full z-[1]">
-              <div className="absolute flex flex-col h-max inset-[0] items-center justify-center m-auto w-full">
+          <List
+            className="flex flex-col gap-8 items-center w-full"
+            orientation="vertical"
+          >
+            <div className="flex flex-1 flex-col gap-4 justify-start my-0 w-full">
+              <div className="flex flex-row gap-1 items-center justify-start md:ml-[0] ml-[17px] w-auto">
+                <Text
+                  className="text-white-A700 text-xl w-auto"
+                  size="txtOpenSansRomanBold20WhiteA700"
+                >
+                  Free to Watch
+                </Text>
+                <Img
+                  className="h-6 w-6"
+                  src="images/img_arrowright.svg"
+                  alt="arrowright"
+                />
+              </div>
+              <div className="flex flex-col items-center justify-start w-full">
                 <div className="flex flex-col items-center justify-start w-full">
-                  <div className="flex md:flex-col flex-row md:gap-5 items-center justify-start w-full">
-                    <div className="flex md:flex-1 sm:flex-col flex-row gap-5 items-center justify-between w-[31%] md:w-full">
+                  <div className="flex md:flex-col flex-row gap-5 items-center justify-between w-full">
+                    <div className="md:flex-1 gap-5 grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 items-center justify-between w-[47%] md:w-full">
                       <Img
-                        className="h-[300px] md:h-auto object-cover"
+                        className="common-pointer h-[300px] md:h-auto object-cover w-full"
                         src="images/img_faj2uifuuaul6u_300x210.png"
-                        alt="faj2uifuuaul6u_One"
+                        alt="faj2uifuuaul6u"
+                        onClick={() => navigate("/details")}
                       />
                       <Img
-                        className="h-[300px] md:h-auto object-cover"
+                        className="common-pointer h-[300px] md:h-auto object-cover w-full"
                         src="images/img_mv5bntfinzblyme_300x210.png"
                         alt="mv5bntfinzblyme"
+                        onClick={() => navigate("/detailsone")}
+                      />
+                      <Img
+                        className="h-[300px] md:h-auto object-cover w-full"
+                        src="images/img_yae6uvqijdn411_300x210.png"
+                        alt="yae6uvqijdn411"
                       />
                     </div>
-                    <div className="md:flex-1 gap-5 grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 items-center justify-center md:ml-[0] ml-[250px] w-[47%] md:w-full">
+                    <div className="md:flex-1 gap-5 grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 items-center justify-center w-[47%] md:w-full">
                       <Img
                         className="h-[300px] md:h-auto object-cover w-full"
                         src="images/img_faj2uifuuaul6u_1.png"
-                        alt="faj2uifuuaul6u_Two"
+                        alt="faj2uifuuaul6u_One"
                       />
                       <Img
                         className="h-[300px] md:h-auto object-cover w-full"
@@ -198,68 +220,21 @@ const Desktop187Page = () => {
                       <Img
                         className="h-[300px] md:h-auto object-cover w-full"
                         src="images/img_yae6uvqijdn411_1.png"
-                        alt="yae6uvqijdn411"
+                        alt="yae6uvqijdn411_One"
                       />
                     </div>
-                    <div className="flex md:flex-1 flex-col items-center justify-start ml-5 md:ml-[0] w-[4%] md:w-full">
+                    <div className="flex md:flex-1 flex-col items-center justify-start w-[4%] md:w-full">
                       <Img
                         className="h-[300px] md:h-auto object-cover w-full"
                         src="images/img_faj2uifuuaul6u_300x52.png"
-                        alt="faj2uifuuaul6u_Three"
+                        alt="faj2uifuuaul6u_Two"
                       />
                     </div>
-                  </div>
-                </div>
-              </div>
-              <div className="absolute flex sm:flex-col flex-row sm:gap-10 h-full inset-y-[0] items-start justify-between left-[1%] my-auto w-[49%]">
-                <div className="flex flex-row gap-1 items-center justify-start w-auto">
-                  <Text
-                    className="text-white-A700 text-xl w-auto"
-                    size="txtOpenSansRomanBold20WhiteA700"
-                  >
-                    Free to Watch
-                  </Text>
-                  <Img
-                    className="h-6 w-6"
-                    src="images/img_arrowright.svg"
-                    alt="arrowright_One"
-                  />
-                </div>
-                <div className="h-[376px] md:h-[386px] sm:mt-0 mt-2.5 relative w-[43%] sm:w-full">
-                  <Img
-                    className="h-[376px] m-auto object-cover rounded-[25px] w-full"
-                    src="images/img_yae6uvqijdn411_376x294.png"
-                    alt="yae6uvqijdn411_One"
-                  />
-                  <div className="absolute bottom-[6%] flex flex-col inset-x-[0] items-center justify-start mx-auto w-[89%]">
-                    <Img
-                      className="h-20 w-20"
-                      src="images/img_play.svg"
-                      alt="play"
-                    />
-                    <Text
-                      className="mt-[60px] text-base text-white-A700"
-                      size="txtOpenSansRomanBold16WhiteA700"
-                    >
-                      Transformers: Rise of the Beasts
-                    </Text>
-                    <Text
-                      className="mt-[3px] text-gray-100 text-right text-xs"
-                      size="txtOpenSansRomanBold12"
-                    >
-                      Resolution:4k
-                    </Text>
-                    <Text
-                      className="mt-[3px] text-gray-100 text-right text-xs"
-                      size="txtOpenSansRomanBold12"
-                    >
-                      Runtime: 1 hr, 37 min
-                    </Text>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="flex flex-col gap-4 justify-start mt-auto mx-auto w-full">
+            <div className="flex flex-1 flex-col gap-4 justify-start my-0 w-full">
               <div className="flex flex-row gap-1 items-center justify-start md:ml-[0] ml-[17px] w-auto">
                 <Text
                   className="text-white-A700 text-xl w-auto"
@@ -276,57 +251,52 @@ const Desktop187Page = () => {
               <div className="flex flex-col items-center justify-start w-full">
                 <div className="flex flex-col items-center justify-start w-full">
                   <div className="flex md:flex-col flex-row gap-5 items-center justify-between w-full">
-                    <List
-                      className="md:flex-1 sm:flex-col flex-row gap-5 grid md:grid-cols-1 grid-cols-2 w-[95%] md:w-full"
-                      orientation="horizontal"
-                    >
-                      <div className="gap-5 grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 items-center justify-between sm:ml-[0] w-full">
-                        <Img
-                          className="flex-1 h-[300px] md:h-auto object-cover w-full"
-                          src="images/img_faj2uifuuaul6u_300x210.png"
-                          alt="faj2uifuuaul6u"
-                        />
-                        <Img
-                          className="flex-1 h-[300px] md:h-auto object-cover w-full"
-                          src="images/img_mv5bntfinzblyme_300x210.png"
-                          alt="mv5bntfinzblyme"
-                        />
-                        <Img
-                          className="flex-1 h-[300px] md:h-auto object-cover w-full"
-                          src="images/img_yae6uvqijdn411_300x210.png"
-                          alt="yae6uvqijdn411"
-                        />
-                      </div>
-                      <div className="gap-5 grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 items-center justify-between sm:ml-[0] w-full">
-                        <Img
-                          className="flex-1 h-[300px] md:h-auto object-cover w-full"
-                          src="images/img_faj2uifuuaul6u_1.png"
-                          alt="faj2uifuuaul6u"
-                        />
-                        <Img
-                          className="flex-1 h-[300px] md:h-auto object-cover w-full"
-                          src="images/img_mv5bntfinzblyme_300x210.png"
-                          alt="mv5bntfinzblyme"
-                        />
-                        <Img
-                          className="flex-1 h-[300px] md:h-auto object-cover w-full"
-                          src="images/img_yae6uvqijdn411_1.png"
-                          alt="yae6uvqijdn411"
-                        />
-                      </div>
-                    </List>
+                    <div className="md:flex-1 gap-5 grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 items-center justify-between w-[47%] md:w-full">
+                      <Img
+                        className="h-[300px] md:h-auto object-cover w-full"
+                        src="images/img_faj2uifuuaul6u_300x210.png"
+                        alt="faj2uifuuaul6u"
+                      />
+                      <Img
+                        className="h-[300px] md:h-auto object-cover w-full"
+                        src="images/img_mv5bntfinzblyme_300x210.png"
+                        alt="mv5bntfinzblyme"
+                      />
+                      <Img
+                        className="h-[300px] md:h-auto object-cover w-full"
+                        src="images/img_yae6uvqijdn411_300x210.png"
+                        alt="yae6uvqijdn411"
+                      />
+                    </div>
+                    <div className="md:flex-1 gap-5 grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 items-center justify-center w-[47%] md:w-full">
+                      <Img
+                        className="h-[300px] md:h-auto object-cover w-full"
+                        src="images/img_faj2uifuuaul6u_1.png"
+                        alt="faj2uifuuaul6u_One"
+                      />
+                      <Img
+                        className="h-[300px] md:h-auto object-cover w-full"
+                        src="images/img_mv5bntfinzblyme_300x210.png"
+                        alt="mv5bntfinzblyme_One"
+                      />
+                      <Img
+                        className="h-[300px] md:h-auto object-cover w-full"
+                        src="images/img_yae6uvqijdn411_1.png"
+                        alt="yae6uvqijdn411_One"
+                      />
+                    </div>
                     <div className="flex md:flex-1 flex-col items-center justify-start w-[4%] md:w-full">
                       <Img
                         className="h-[300px] md:h-auto object-cover w-full"
                         src="images/img_faj2uifuuaul6u_300x52.png"
-                        alt="faj2uifuuaul6u"
+                        alt="faj2uifuuaul6u_Two"
                       />
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+          </List>
           <div className="flex flex-col items-start justify-start md:ml-[0] ml-[17px] w-full">
             <div className="flex flex-col gap-[15px] items-start justify-start w-[92%] md:w-full">
               <div className="flex flex-row gap-1 items-center justify-start w-auto">
@@ -339,7 +309,7 @@ const Desktop187Page = () => {
                 <Img
                   className="h-6 w-6"
                   src="images/img_arrowright.svg"
-                  alt="arrowright_Two"
+                  alt="arrowright"
                 />
               </div>
               <List
@@ -753,19 +723,19 @@ const Desktop187Page = () => {
           <div className="flex sm:flex-col flex-row gap-8 items-start justify-start md:ml-[0] ml-[54px] w-[38%] md:w-full">
             <a href="javascript:" className="text-base text-white-A700">
               <Text size="txtOpenSansRomanRegular16"
-               onClick={() => navigate("/desktop180")}
+               onClick={() => navigate("/PrivacyPolicy")}
               >Privacy Policy</Text>
             </a>
             <Text
               className="text-base text-white-A700"
               size="txtOpenSansRomanRegular16"
-              onClick={() => navigate("/desktop181")}
+              onClick={() => navigate("/Disclaimer")}
             >
               Disclaimer
             </Text>
             <a href="javascript:" className="text-base text-white-A700">
               <Text size="txtOpenSansRomanRegular16"
-              onClick={() => navigate("/desktop179")}
+              onClick={() => navigate("/TermsConditions")}
               >Terms and Conditions</Text>
             </a>
             <Text
@@ -782,4 +752,4 @@ const Desktop187Page = () => {
   );
 };
 
-export default Desktop187Page;
+export default HomePage;

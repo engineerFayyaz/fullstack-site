@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 import { Button, Img, List, PagerIndicator, Text } from "components";
 
-const Desktop189Page = () => {
+const Channels = () => {
   const navigate = useNavigate();
 
   return (
@@ -20,7 +20,7 @@ const Desktop189Page = () => {
             <div className="flex sm:flex-col flex-row sm:gap-10 items-start justify-between w-[63%] md:w-full">
               <Button
                 className="common-pointer bg-transparent cursor-pointer flex items-center justify-center min-w-[76px]"
-                onClick={() => navigate("/desktop186")}
+                onClick={() => navigate("/HomePage")}
                 leftIcon={
                   <Img
                     className="h-[22px] mb-px mr-2"
@@ -33,7 +33,7 @@ const Desktop189Page = () => {
               </Button>
               <Button
                 className="common-pointer bg-transparent cursor-pointer flex items-center justify-center min-w-[83px]"
-                onClick={() => navigate("/desktop188")}
+                onClick={() => navigate("/Movies")}
                 leftIcon={
                   <Img
                     className="h-[22px] mb-px mr-2"
@@ -68,7 +68,7 @@ const Desktop189Page = () => {
                 <Text
                   className="common-pointer text-base text-white-A700 w-auto"
                   size="txtOpenSansRomanRegular16"
-                  onClick={() => navigate("/desktopthirtyseven")}
+                  onClick={() => navigate("/MyChannels")}
                 >
                   My Channel
                 </Text>
@@ -590,19 +590,19 @@ const Desktop189Page = () => {
           <div className="flex sm:flex-col flex-row gap-8 items-start justify-start md:ml-[0] ml-[54px] w-[38%] md:w-full">
             <a href="javascript:" className="text-base text-white-A700">
               <Text size="txtOpenSansRomanRegular16"
-               onClick={() => navigate("/desktop180")}
+               onClick={() => navigate("/PrivacyPolicy")}
               >Privacy Policy</Text>
             </a>
             <Text
               className="text-base text-white-A700"
               size="txtOpenSansRomanRegular16"
-              onClick={() => navigate("/desktop181")}
+              onClick={() => navigate("/Disclaimer")}
             >
               Disclaimer
             </Text>
             <a href="javascript:" className="text-base text-white-A700">
               <Text size="txtOpenSansRomanRegular16"
-              onClick={() => navigate("/desktop179")}
+              onClick={() => navigate("/TermsConditions")}
               >Terms and Conditions</Text>
             </a>
             <Text
@@ -619,4 +619,4 @@ const Desktop189Page = () => {
   );
 };
 
-export default Desktop189Page;
+export default Channels;

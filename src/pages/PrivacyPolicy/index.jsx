@@ -3,21 +3,21 @@ import React from "react";
 import { Button, Img, Text } from "components";
 import Header from "components/Header";
 
-const Desktop179Page = () => {
+const PrivacyPolicy = () => {
   return (
     <>
       <div className="bg-gray-900 flex flex-col items-center justify-start mx-auto p-2 shadow-bs1 w-full">
         <Header className="flex md:flex-col flex-row font-opensans md:gap-5 items-center justify-center md:px-5 w-full" />
-        <div className="flex flex-col font-opensans items-center justify-start mt-[53px] md:px-5">
+        <div className="flex flex-col font-opensans items-center justify-start mt-14 md:px-5">
           <Text
             className="md:text-3xl sm:text-[28px] text-[32px] text-gray-100"
             size="txtOpenSansRomanBold32"
           >
-            Terms & Conditions
+            Privacy Policy
           </Text>
         </div>
         <Text
-          className="mb-[49px] mt-8 text-white-A700 text-xl"
+          className="mb-[49px] mt-7 text-white-A700 text-xl"
           size="txtPoppinsRegular20WhiteA700"
         >
           <>
@@ -79,4 +79,4 @@ const Desktop179Page = () => {
   );
 };
 
-export default Desktop179Page;
+export default PrivacyPolicy;

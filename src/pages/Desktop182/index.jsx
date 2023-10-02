@@ -20,7 +20,7 @@ const Desktop182Page = () => {
             <div className="flex sm:flex-col flex-row sm:gap-10 items-start justify-between w-[64%] md:w-full">
               <Button
                 className="common-pointer bg-transparent cursor-pointer flex items-center justify-center min-w-[76px]"
-                onClick={() => navigate("/desktop186")}
+                onClick={() => navigate("/HomePage")}
                 leftIcon={
                   <Img
                     className="h-[22px] mb-px mr-2"
@@ -33,7 +33,7 @@ const Desktop182Page = () => {
               </Button>
               <Button
                 className="common-pointer bg-transparent cursor-pointer flex items-center justify-center min-w-[83px]"
-                onClick={() => navigate("/desktop188")}
+                onClick={() => navigate("/Movies")}
                 leftIcon={
                   <Img
                     className="h-[22px] mb-px mr-2"
@@ -48,7 +48,7 @@ const Desktop182Page = () => {
               </Button>
               <Button
                 className="common-pointer bg-transparent cursor-pointer flex items-center justify-center min-w-[100px]"
-                onClick={() => navigate("/desktop189")}
+                onClick={() => navigate("/Channels")}
                 leftIcon={
                   <Img
                     className="h-[22px] mt-px mr-2"
@@ -70,7 +70,7 @@ const Desktop182Page = () => {
                 <Text
                   className="common-pointer text-base text-white-A700 w-auto"
                   size="txtOpenSansRomanRegular16"
-                  onClick={() => navigate("/desktopthirtyseven")}
+                  onClick={() => navigate("/MyChannels")}
                 >
                   My Channel
                 </Text>

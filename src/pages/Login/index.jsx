@@ -122,7 +122,7 @@ const LoginPage = () => {
               ></CheckBox>
               <Button
                 className="common-pointer border border-pink-500 border-solid cursor-pointer font-bold leading-[normal] min-w-[225px] md:ml-[0] ml-[118px] mt-[50px] shadow-bs2 text-2xl md:text-[22px] text-center sm:text-xl"
-                onClick={() => navigate("/desktop186")}
+                onClick={() => navigate("/HomePage")}
                 shape="round"
                 color="pink_500"
                 size="xs"
@@ -136,7 +136,7 @@ const LoginPage = () => {
                   className="sm:mt-0 mt-0.5 text-lg text-white-A700_90"
                 >
                   <Text size="txtPoppinsRegular18WhiteA70090"
-                  onClick={() => navigate("/desktop180")}
+                  onClick={() => navigate("/PrivacyPolicy")}
                   >
                     Privacy Policy
                   </Text>
@@ -147,14 +147,14 @@ const LoginPage = () => {
                 >
                   <Text size="txtPoppinsRegular18WhiteA70090"
                 
-                  onClick={() => navigate("/desktop179")}>
+                  onClick={() => navigate("/TermsConditions")}>
                     Terms and Conditions
                   </Text>
                 </a>
                 <Text
                   className="mb-0.5 text-lg text-white-A700_90"
                   size="txtPoppinsRegular18WhiteA70090"
-                  onClick={() => navigate("/desktop181")}
+                  onClick={() => navigate("/Disclaimer")}
                 >
                   Disclaimer
                 </Text>
