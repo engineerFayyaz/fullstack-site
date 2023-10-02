@@ -14,7 +14,7 @@ const Desktop191 = React.lazy(() => import("pages/Desktop191"));
 const Player = React.lazy(() => import("pages/Player"));
 const DetailsOne = React.lazy(() => import("pages/DetailsOne"));
 const Details = React.lazy(() => import("pages/Details"));
-const Desktop190 = React.lazy(() => import("pages/Desktop190"));
+// const Desktop190 = React.lazy(() => import("pages/Desktop190"));
 const Channels = React.lazy(() => import("pages/Channels"));
 const Movies = React.lazy(() => import("pages/Movies"));
 // const Desktop187 = React.lazy(() => import("pages/Desktop187"));
@@ -37,10 +37,8 @@ const ProjectRoutes = () => {
           <Route path="/signup" element={<SignUp />} />
           <Route path="/signupemail" element={<SignUpEmail />} />
           <Route path="/HomePage" element={<HomePage />} />
-          {/* <Route path="/desktop187" element={<Desktop187 />} /> */}
           <Route path="/Movies" element={<Movies />} />
           <Route path="/Channels" element={<Channels />} />
-          <Route path="/desktop190" element={<Desktop190 />} />
           <Route path="/details" element={<Details />} />
           <Route path="/detailsone" element={<DetailsOne />} />
           <Route path="/player" element={<Player />} />

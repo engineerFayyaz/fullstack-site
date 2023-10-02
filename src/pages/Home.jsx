@@ -33,9 +33,6 @@ const Home = () => {
           <Link to="/Channels">Channels</Link>
         </li>
         <li>
-          <Link to="/desktop190">Desktop190</Link>
-        </li>
-        <li>
           <Link to="/details">Details</Link>
         </li>
         <li>
