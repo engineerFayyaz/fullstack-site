@@ -3,7 +3,7 @@ import React from "react";
 import { Button, Img, Input, Text, TextArea } from "components";
 import Header1 from "components/Header1";
 
-const DesktopThirtySixPage = () => {
+const CreateNewChannel = () => {
   return (
     <>
       <div className="bg-gray-900 flex flex-col justify-start mx-auto p-2 w-full">
@@ -107,8 +107,6 @@ const DesktopThirtySixPage = () => {
                   className="bg-transparent border border-solid border-white-A700 gap-[13px] h-[309px] leading-[normal] pb-[265px] pt-[13px] px-2.5 rounded-[5px] text-left text-sm placeholder:text-white-A700 text-white-A700 w-[420px]"
                   name="frameThree_Three"
                   placeholder="Description"
-                  name="frameThree_Three"
-                  placeholder="Description"
                 ></TextArea>
               </div>
               <div className="flex flex-col md:gap-10 gap-24 items-center justify-start w-[40%] md:w-full">
@@ -144,4 +142,4 @@ const DesktopThirtySixPage = () => {
   );
 };
 
-export default DesktopThirtySixPage;
+export default CreateNewChannel;

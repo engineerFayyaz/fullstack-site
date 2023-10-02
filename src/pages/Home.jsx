@@ -42,7 +42,6 @@ const Home = () => {
           <Link to="/player">Player</Link>
         </li>
         <li>
-          <Link to="/desktop191">Desktop191</Link>
         </li>
         <li>
           <Link to="/TermsConditions">TermsConditions</Link>
@@ -60,7 +59,7 @@ const Home = () => {
           <Link to="/desktop192">Desktop192</Link>
         </li>
         <li>
-          <Link to="/desktopthirtysix">DesktopThirtySix</Link>
+          <Link to="/CreateNewChannel">CreateNewChannel</Link>
         </li>
         <li>
           <Link to="/UploadContent">UploadContent</Link>

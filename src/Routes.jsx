@@ -4,13 +4,12 @@ import Home from "pages/Home";
 import NotFound from "pages/NotFound";
 const MyChannels = React.lazy(() => import("pages/MyChannels"));
 const UploadContent = React.lazy(() => import("pages/UploadContent"));
-const DesktopThirtySix = React.lazy(() => import("pages/DesktopThirtySix"));
+const CreateNewChannel = React.lazy(() => import("pages/CreateNewChannel"));
 const Desktop192 = React.lazy(() => import("pages/Desktop192"));
 const Profile = React.lazy(() => import("pages/Profile"));
 const Disclaimer = React.lazy(() => import("pages/Disclaimer"));
 const PrivacyPolicy = React.lazy(() => import("pages/PrivacyPolicy"));
 const TermsConditions = React.lazy(() => import("pages/TermsConditions"));
-const Desktop191 = React.lazy(() => import("pages/Desktop191"));
 const Player = React.lazy(() => import("pages/Player"));
 const DetailsOne = React.lazy(() => import("pages/DetailsOne"));
 const Details = React.lazy(() => import("pages/Details"));
@@ -42,13 +41,12 @@ const ProjectRoutes = () => {
           <Route path="/details" element={<Details />} />
           <Route path="/detailsone" element={<DetailsOne />} />
           <Route path="/player" element={<Player />} />
-          <Route path="/desktop191" element={<Desktop191 />} />
           <Route path="/TermsConditions" element={<TermsConditions />} />
           <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
           <Route path="/Disclaimer" element={<Disclaimer />} />
           <Route path="/Profile" element={<Profile />} />
           <Route path="/desktop192" element={<Desktop192 />} />
-          <Route path="/desktopthirtysix" element={<DesktopThirtySix />} />
+          <Route path="/CreateNewChannel" element={<CreateNewChannel />} />
           <Route path="/UploadContent" element={<UploadContent />} />
           <Route path="/MyChannels" element={<MyChannels />} />
           <Route path="/dhiwise-dashboard" element={<Home />} />
