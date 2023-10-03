@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 import { Button, Img, List, PagerIndicator, RatingBar, Text } from "components";
 import Header1 from "components/Header1";
+import FreeToWatch from "components/FreeToWatch";
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -27,125 +28,16 @@ const HomePage = () => {
             selectedWrapperCss="inline-block mx-[5.00px]"
             unselectedWrapperCss="inline-block mx-[5.00px]"
           />
-          <div className="absolute bottom-[13%] flex flex-col items-start justify-start left-[2%] w-[33%]">
-            <Text
-              className="text-base text-gray-100 text-right"
-              size="txtOpenSansRomanBold16Gray100"
-            >
-              HBO
-            </Text>
-            <div className="flex flex-col font-poppins mt-3.5 relative w-full">
-              <Text
-                className="mx-auto sm:text-[40px] md:text-[46px] text-[50px] text-gray-100"
-                size="txtPoppinsBlack50"
-              >
-                Meg 2: The Trench
-              </Text>
-              <div className="flex flex-row font-opensans gap-[53px] items-start justify-start mt-[-6.72px] w-[72%] z-[1]">
-                <Text
-                  className="text-base text-gray-100 text-right"
-                  size="txtOpenSansRomanBold16Gray100"
-                >
-                  Resolution:4k
-                </Text>
-                <Text
-                  className="text-base text-gray-100 text-right"
-                  size="txtOpenSansRomanBold16Gray100"
-                >
-                  Runtime: 1 hr, 37 min
-                </Text>
-              </div>
-            </div>
-            <div className="flex flex-row font-poppins gap-5 items-center justify-start mt-[17px] w-[53%] md:w-full">
-              <div className="flex flex-row items-center justify-evenly w-[78%]">
-                <RatingBar
-                  className="flex justify-between w-[190px]"
-                  value={5}
-                  starCount={5}
-                  activeColor="#f1c644"
-                  size={30}
-                ></RatingBar>
-              </div>
-              <Text
-                className="text-white-A700 text-xl"
-                size="txtPoppinsRegular20WhiteA700"
-              >
-                5/5
-              </Text>
-            </div>
-          </div>
+          <FreeToWatch/>
         </div>
         <div className="flex flex-col gap-8 items-start justify-start max-w-[1432px] mb-2 mt-8 mx-auto overflow-auto md:px-5 w-full">
           <List
             className="flex flex-col gap-8 items-center w-full"
             orientation="vertical"
           >
+         
             <div className="flex flex-1 flex-col gap-4 justify-start my-0 w-full">
-              <div className="flex flex-row gap-1 items-center justify-start md:ml-[0] ml-[17px] w-auto">
-                <Text
-                  className="text-white-A700 text-xl w-auto"
-                  size="txtOpenSansRomanBold20WhiteA700"
-                >
-                  Free to Watch
-                </Text>
-                <Img
-                  className="h-6 w-6"
-                  src="images/img_arrowright.svg"
-                  alt="arrowright"
-                />
-              </div>
-              <div className="flex flex-col items-center justify-start w-full">
-                <div className="flex flex-col items-center justify-start w-full">
-                  <div className="flex md:flex-col flex-row gap-5 items-center justify-between w-full">
-                    <div className="md:flex-1 gap-5 grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 items-center justify-between w-[47%] md:w-full">
-                      <Img
-                        className="common-pointer h-[300px] md:h-auto object-cover w-full"
-                        src="images/img_faj2uifuuaul6u_300x210.png"
-                        alt="faj2uifuuaul6u"
-                        onClick={() => navigate("/details")}
-                      />
-                      <Img
-                        className="common-pointer h-[300px] md:h-auto object-cover w-full"
-                        src="images/img_mv5bntfinzblyme_300x210.png"
-                        alt="mv5bntfinzblyme"
-                        onClick={() => navigate("/detailsone")}
-                      />
-                      <Img
-                        className="h-[300px] md:h-auto object-cover w-full"
-                        src="images/img_yae6uvqijdn411_300x210.png"
-                        alt="yae6uvqijdn411"
-                      />
-                    </div>
-                    <div className="md:flex-1 gap-5 grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 items-center justify-center w-[47%] md:w-full">
-                      <Img
-                        className="h-[300px] md:h-auto object-cover w-full"
-                        src="images/img_faj2uifuuaul6u_1.png"
-                        alt="faj2uifuuaul6u_One"
-                      />
-                      <Img
-                        className="h-[300px] md:h-auto object-cover w-full"
-                        src="images/img_mv5bntfinzblyme_300x210.png"
-                        alt="mv5bntfinzblyme_One"
-                      />
-                      <Img
-                        className="h-[300px] md:h-auto object-cover w-full"
-                        src="images/img_yae6uvqijdn411_1.png"
-                        alt="yae6uvqijdn411_One"
-                      />
-                    </div>
-                    <div className="flex md:flex-1 flex-col items-center justify-start w-[4%] md:w-full">
-                      <Img
-                        className="h-[300px] md:h-auto object-cover w-full"
-                        src="images/img_faj2uifuuaul6u_300x52.png"
-                        alt="faj2uifuuaul6u_Two"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-1 flex-col gap-4 justify-start my-0 w-full">
-              <div className="flex flex-row gap-1 items-center justify-start md:ml-[0] ml-[17px] w-auto">
+              {/* <div className="flex flex-row gap-1 items-center justify-start md:ml-[0] ml-[17px] w-auto">
                 <Text
                   className="text-white-A700 text-xl w-auto"
                   size="txtOpenSansRomanBold20WhiteA700"
@@ -157,7 +49,7 @@ const HomePage = () => {
                   src="images/img_arrowright.svg"
                   alt="arrowright"
                 />
-              </div>
+              </div> */}
               <div className="flex flex-col items-center justify-start w-full">
                 <div className="flex flex-col items-center justify-start w-full">
                   <div className="flex md:flex-col flex-row gap-5 items-center justify-between w-full">
